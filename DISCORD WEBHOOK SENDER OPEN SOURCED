@@ -1,0 +1,28 @@
+-- Create GUI
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+
+-- Set up ScreenGui
+ScreenGui.Parent = game.CoreGui
+
+-- Set up Frame
+Frame.Parent = ScreenGui
+Frame.Size = UDim2.new(1, 0, 1, 0) -- Fullscreen
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- Black background
+
+-- Set up TextLabel
+TextLabel.Parent = Frame
+TextLabel.Size = UDim2.new(1, 0, 1, 0) -- Fullscreen
+TextLabel.BackgroundTransparency = 1 -- Transparent background
+TextLabel.Text = "Discord Link Copied"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255) -- White text
+TextLabel.TextScaled = true -- Scales text size automatically
+TextLabel.Font = Enum.Font.SourceSansBold -- Font style
+
+-- Copy link to clipboard
+setclipboard("https://discord.gg/FBZWBJC")
+
+-- Remove GUI after 4 seconds
+wait(4)
+ScreenGui:Destroy()
