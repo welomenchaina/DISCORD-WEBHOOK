@@ -21,7 +21,7 @@ TextLabel.TextScaled = true -- Scales text size automatically
 TextLabel.Font = Enum.Font.SourceSansBold -- Font style
 
 -- Copy link to clipboard
-setclipboard("https://discord.gg/FBZWBJC")
+setclipboard("https://discord.gg/Usx76BXuAN")
 
 -- Remove GUI after 4 seconds
 wait(4)
